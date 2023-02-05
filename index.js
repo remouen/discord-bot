@@ -39,12 +39,4 @@ for (const file of eventFiles) {
   }
 }
 
-client.on(Events.MessageCreate, (msg) => {
-  console.log(msg);
-  if (msg.content === "hey") {
-    msg.reply("hi there");
-    msg.channel.send("nah");
-  }
-});
-
 client.login(process.env.BOT_TOKEN);

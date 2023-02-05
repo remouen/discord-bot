@@ -12,7 +12,6 @@ const commandFiles = fs
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
   commands.push(command.data.toJSON());
-  console.log(commands);
 }
 
 // Construct and prepare an instance of the REST module
